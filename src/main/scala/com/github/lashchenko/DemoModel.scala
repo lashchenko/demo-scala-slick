@@ -1,0 +1,11 @@
+package com.github.lashchenko
+
+////////////////////////////////////////////////////////////////////////////////
+// MODELS
+////////////////////////////////////////////////////////////////////////////////
+
+trait DemoModel
+
+case class DemoBudgetId(iId: Int, sId: String) extends DemoModel
+case class DemoBudget(id: DemoBudgetId, total: Option[Int], daily: Option[Int], enabled: Boolean) extends DemoModel
+
